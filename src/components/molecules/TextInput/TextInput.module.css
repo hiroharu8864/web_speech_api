@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 500;
+  color: #333;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 150px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.textarea::placeholder {
+  color: #999;
+}

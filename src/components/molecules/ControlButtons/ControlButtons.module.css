@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, opacity 0.2s;
+  min-width: 140px;
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.speakButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.speakButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #5a6fd6 0%, #6a4292 100%);
+}
+
+.stopButton {
+  background-color: #ff5252;
+  color: white;
+}
+
+.stopButton:hover:not(:disabled) {
+  background-color: #e04848;
+}
+
+@media (max-width: 480px) {
+  .button {
+    flex: 1;
+    min-width: 100px;
+  }
+}
