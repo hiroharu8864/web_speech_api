@@ -65,6 +65,17 @@ src/
 - Safari（最新版）
 - Firefox（最新版）
 
+## デプロイ
+
+### Vercel
+
+1. [Vercel](https://vercel.com) にログイン
+2. 「New Project」からGitHubリポジトリをインポート
+3. フレームワークは自動検出（Vite）
+4. 「Deploy」をクリック
+
+設定は `vercel.json` で管理されています（SPAのルーティング対応済み）。
+
 ## 注意事項
 
 - 利用可能な音声の種類と品質は OS およびブラウザに依存します
